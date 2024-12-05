@@ -38,9 +38,7 @@ export default function TodoList({ todos }) {
         ))}
       </ul>
       {todoItems.length > 0 && (
-        <button onClick={removeCompleted} style={{ marginTop: "16px" }}>
-          Remove Completed
-        </button>
+        <button onClick={removeCompleted}>Remove Completed</button>
       )}
     </div>
   );

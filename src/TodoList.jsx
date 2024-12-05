@@ -26,7 +26,13 @@ export default function TodoList({ todos }) {
                 checked={todo.completed}
                 onChange={() => toggleCompletion(todo.id)}
               />
-              {todo.text}
+              <span
+                style={{
+                  textDecoration: todo.completed ? "line-through" : "none",
+                }}
+              >
+                {todo.text}
+              </span>
             </label>
           </li>
         ))}
